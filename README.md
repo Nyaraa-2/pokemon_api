@@ -1,5 +1,5 @@
 # Pokemon api
-
+[![GitHub issues](https://img.shields.io/github/issues/Nyaraa-2/pokemon_api_vue_temp)](https://github.com/Nyaraa-2/pokemon_api_vue_temp/issues)
 ## Project setup
 
 ```
@@ -29,7 +29,6 @@ npm run lint
 
 ```
 nr test:unit
-https://img.shields.io/appveyor/tests/Nyaraa-2/pokemon_api_vue_temp?style=flat-square
 ```
 
 ### Built With
