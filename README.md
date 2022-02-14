@@ -32,13 +32,9 @@ nr test:unit
 ```
 
 ### Built With
+![GitHub top language](https://img.shields.io/github/languages/top/Nyaraa-2/pokemon_api_vue_temp)
 
-```
-Vue.js
-Vuetify
-VueRouter
-JestJs
-```
+
 
 ### Customize configuration
 
