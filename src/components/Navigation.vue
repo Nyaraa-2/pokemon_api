@@ -15,13 +15,13 @@
 
         <v-btn text
             ><router-link :to="{ name: homepage }" class="text-decoration-none">
-                <span class="white--text">Accueil</span>
+                <span class="white--text">{{ $t('navbar.home') }}</span>
             </router-link>
         </v-btn>
 
         <v-btn text>
             <router-link :to="{ name: bagPage }" class="text-decoration-none">
-                <span class="white--text"> Sac</span>
+                <span class="white--text">{{ $t('navbar.bag') }}</span>
             </router-link>
         </v-btn>
         <v-rating
@@ -35,6 +35,9 @@
         ></v-rating>
         <v-btn text @click="changeTheme">
             <v-icon class="white--text">mdi-theme-light-dark</v-icon>
+        </v-btn>
+        <v-btn text @click="toggleLang">
+            <v-icon class="white--text">mdi-panda</v-icon>
         </v-btn>
     </v-app-bar>
 </template>
@@ -53,6 +56,13 @@ export default {
     methods: {
         changeTheme() {
             this.$vuetify.theme.dark = !this.$vuetify.theme.dark
+        },
+        toggleLang() {
+            if (this.$i18n.locale === 'fr') {
+                this.$i18n.locale = 'en'
+            } else {
+                this.$i18n.locale = 'fr'
+            }
         },
     },
     computed: {

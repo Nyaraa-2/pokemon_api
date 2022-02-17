@@ -1,0 +1,9 @@
+{
+    "message": "hello i18n !!",
+    "buttonadd": "Add",
+    "navbar": {
+        "home": "Home",
+        "bag": "Bag"
+    },
+    "changeLangBtn": "Change language"
+}

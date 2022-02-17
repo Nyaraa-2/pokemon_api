@@ -1,0 +1,9 @@
+{
+    "message": "bonjour i18n !!",
+    "buttonadd": "Ajouter",
+    "navbar": {
+        "home": "Accueil",
+        "bag": "Sac"
+    },
+    "changeLangBtn": "Changer la langue"
+}

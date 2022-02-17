@@ -24,11 +24,15 @@
                                     Details
                                 </v-btn>
                             </router-link>
-                            <custom-btn
-                                :pokemon="pokemon"
-                                @addPoke="addPokemon(pokemon)"
-                                label="Ajouter"
-                            />
+                            <v-btn
+                                rounded
+                                outlined
+                                color="red"
+                                :disabled="disabledButton(pokemon)"
+                                @click="addPokemon(pokemon)"
+                            >
+                                {{ $t('buttonadd') }}
+                            </v-btn>
                         </v-card-actions>
                     </v-card>
                 </v-flex>
@@ -48,13 +52,11 @@ import { gottaCatchEmAll } from '../services/pokemon'
 import { POKEMON_PAGE } from '../router/routesNames'
 import { ADD_POKEMON_IN_BAG } from '../store/storeConstants'
 import PokemonCard from '../components/PokemonCard'
-import CustomBtn from '../components/CustomBtn.vue'
 import * as constants from '../components/componentConst'
 import SnackBar from '../components/SnackBar.vue'
-
 export default {
     name: 'HomePage',
-    components: { PokemonCard, CustomBtn, SnackBar },
+    components: { PokemonCard, SnackBar },
     data: () => ({
         error: '',
         pokemons: [],
@@ -79,6 +81,13 @@ export default {
         },
         disabledSnack: function () {
             this.snackbar = false
+        },
+        disabledButton: function (pokemon) {
+            if (
+                this.$store.state.bag.length == 5 ||
+                this.$store.state.bag.find((p) => p.name === pokemon.name)
+            )
+                return true
         },
     },
 }
