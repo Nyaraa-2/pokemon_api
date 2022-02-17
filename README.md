@@ -14,7 +14,7 @@ As part of the evaluation of the skills of the vue.js module, it is to propose a
 #### Using plugins
 - Navigation (vue-router) :white_check_mark:
 - Global state with the store (vuex) :white_check_mark:
-- Others (vuetify, vue-i18n...) :shipit:
+- Others (vuetify, vue-i18n...) :white_check_mark:
 #### Interacting with APIs 
 - Calls (axios, fetch) :white_check_mark:
 - Dealing with asynchronicity (.then, async/await) :white_check_mark:
