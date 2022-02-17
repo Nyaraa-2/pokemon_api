@@ -1,14 +1,16 @@
 <template>
-    <v-app-bar app color="red" dark>
+    <v-app-bar app color="indigo lighten-3">
         <div class="d-flex align-center">
-            <v-img
-                alt="pokeapi Logo"
-                class="shrink mr-2"
-                contain
-                src="../assets/pokeapi.png"
-                transition="scale-transition"
-                width="100"
-            />
+            <router-link :to="{ name: homepage }" class="text-decoration-none">
+                <v-img
+                    alt="pokeapi Logo"
+                    class="shrink mr-2"
+                    contain
+                    src="../assets/pokeapi.png"
+                    transition="scale-transition"
+                    width="100"
+                />
+            </router-link>
         </div>
 
         <v-spacer></v-spacer>
@@ -37,7 +39,7 @@
             <v-icon class="white--text">mdi-theme-light-dark</v-icon>
         </v-btn>
         <v-btn text @click="toggleLang">
-            <v-icon class="white--text">mdi-panda</v-icon>
+            <span class="white--text">{{ $t('navbar.language') }}</span>
         </v-btn>
     </v-app-bar>
 </template>

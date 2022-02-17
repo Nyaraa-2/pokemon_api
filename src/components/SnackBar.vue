@@ -5,7 +5,7 @@
 
             <template v-slot:action="{ attrs }">
                 <v-btn
-                    color="red"
+                    color="indigo lighten-2"
                     text
                     v-bind="attrs"
                     elevation="24"

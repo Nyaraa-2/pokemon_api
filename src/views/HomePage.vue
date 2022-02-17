@@ -20,14 +20,14 @@
                                 }"
                                 class="text-decoration-none"
                             >
-                                <v-btn rounded outlined color="red">
+                                <v-btn outlined color="indigo lighten-2">
                                     Details
                                 </v-btn>
                             </router-link>
+                            <v-spacer />
                             <v-btn
-                                rounded
                                 outlined
-                                color="red"
+                                color="indigo lighten-2"
                                 :disabled="disabledButton(pokemon)"
                                 @click="addPokemon(pokemon)"
                             >

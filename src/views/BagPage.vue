@@ -12,16 +12,16 @@
                             }"
                             class="text-decoration-none"
                         >
-                            <v-btn rounded outlined color="red">
+                            <v-btn outlined color="indigo lighten-2">
                                 Details
                             </v-btn>
                         </router-link>
+                        <v-spacer />
                         <v-btn
                             @click="removePokemon(pokemon)"
-                            rounded
                             outlined
-                            color="red"
-                            >Supprimer</v-btn
+                            color="indigo lighten-2"
+                            >{{ $t('buttondelete') }}</v-btn
                         >
                     </v-card-actions>
                 </v-card>

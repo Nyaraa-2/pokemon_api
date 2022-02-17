@@ -1,9 +1,19 @@
 {
     "message": "bonjour i18n !!",
     "buttonadd": "Ajouter",
+    "buttondelete": "Supprimer",
     "navbar": {
         "home": "Accueil",
-        "bag": "Sac"
+        "bag": "Sac",
+        "language": "EN",
+        "goBack": "Retour"
+    },
+    "pokemon": {
+        "weight": "Poids",
+        "height": "Taille",
+        "base experience": "Experience de base",
+        "types": "Types",
+        "abilities": "Capacités"
     },
     "changeLangBtn": "Changer la langue"
 }
