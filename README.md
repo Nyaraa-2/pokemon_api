@@ -1,4 +1,3 @@
-[![GitHub issues](https://img.shields.io/github/issues/Nyaraa-2/pokemon_api_vue_temp)](https://github.com/Nyaraa-2/pokemon_api_vue_temp/issues)
 
 ![alt text](https://pokeapi.co/static/pokeapi_256.3fa72200.png)
 
