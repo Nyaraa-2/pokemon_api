@@ -1,4 +1,3 @@
-[![GitHub issues](https://img.shields.io/github/issues/Nyaraa-2/pokemon_api_vue_temp)](https://github.com/Nyaraa-2/pokemon_api_vue_temp/issues)
 
 ![alt text](https://pokeapi.co/static/pokeapi_256.3fa72200.png)
 
@@ -15,7 +14,7 @@ As part of the evaluation of the skills of the vue.js module, it is to propose a
 #### Using plugins
 - Navigation (vue-router) :white_check_mark:
 - Global state with the store (vuex) :white_check_mark:
-- Others (vuetify, vue-i18n...) :shipit:
+- Others (vuetify, vue-i18n...) :white_check_mark:
 #### Interacting with APIs 
 - Calls (axios, fetch) :white_check_mark:
 - Dealing with asynchronicity (.then, async/await) :white_check_mark:
