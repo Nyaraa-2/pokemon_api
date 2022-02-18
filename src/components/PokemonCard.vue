@@ -5,7 +5,7 @@
                 <v-list-item-title class="text-h5 mb-1">
                     {{ pokemonDetails.name | toUpperCase(pokemonDetails.name) }}
                 </v-list-item-title>
-                <div v-for="type in pokemonDetails.types" :key="type">
+                <div v-for="type in pokemonDetails.types" :key="type.name">
                     <v-card-text>
                         {{ type.type.name | toUpperCase(type) }}
                     </v-card-text>

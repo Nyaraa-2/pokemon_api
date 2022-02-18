@@ -1,12 +1,12 @@
 <template>
     <div>
-        <v-container fluid grid-list-md>
+        <v-container grid-list-md>
             <v-layout row wrap>
                 <v-flex
                     xs12
                     sm6
-                    md4
-                    lg3
+                    md3
+                    lg4
                     v-for="pokemon in pokemons.results"
                     :key="pokemon.name"
                 >
@@ -88,6 +88,11 @@ export default {
                 this.$store.state.bag.find((p) => p.name === pokemon.name)
             )
                 return true
+        },
+    },
+    computed: {
+        exemplei18() {
+            return this.$t('buttonadd')
         },
     },
 }

@@ -6,14 +6,33 @@
             >
         </v-btn>
         <v-container>
-            <v-card max-width="80%" raised class="mx-auto">
-                <v-card-title color="red">{{
-                    pokemon.name | toUpperCase(pokemon.name)
-                }}</v-card-title>
+            <v-card max-width="80%" class="mx-auto">
+                <v-row align="center" class="mx-10">
+                    <v-card-title class="red--text">{{
+                        pokemon.name | toUpperCase(pokemon.name)
+                    }}</v-card-title>
+                    <v-spacer />
+                    <div v-for="type in pokemon.types" :key="type.slot">
+                        <v-col>
+                            <img
+                                :src="
+                                    require(`../assets/types/${type.type.name}.png`)
+                                "
+                                alt="type_pokemon"
+                            />
+                        </v-col>
+                        <v-spacer />
+                    </div>
+                </v-row>
                 <v-row align="center" class="mx-0">
                     <v-col>
                         <div>
-                            <v-img :src="image" alt="pokemon image" />
+                            <v-img
+                                width="300px"
+                                height="300px"
+                                :src="image"
+                                alt="pokemon image"
+                            />
                         </div>
                     </v-col>
                     <v-col>
@@ -93,7 +112,10 @@ export default {
     async mounted() {
         try {
             this.pokemon = await getPokemonByName(this.$route.params.name)
-            this.image = this.pokemon.sprites.other.dream_world.front_default
+            this.image =
+                this.pokemon.sprites.versions['generation-v'][
+                    'black-white'
+                ].animated.front_shiny
             this.versions = this.pokemon.sprites.versions
             console.log(this.versions)
         } catch (error) {
