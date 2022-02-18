@@ -6,7 +6,7 @@
             >
         </v-btn>
         <v-container>
-            <v-card max-width="80%" class="mx-auto">
+            <v-card max-width="90%">
                 <v-row align="center" class="mx-10">
                     <v-card-title class="red--text">{{
                         pokemon.name | toUpperCase(pokemon.name)
@@ -24,11 +24,11 @@
                         <v-spacer />
                     </div>
                 </v-row>
-                <v-row align="center" class="mx-0">
-                    <v-col>
+                <v-row align="center">
+                    <v-col align="center" class="mx-0">
                         <div>
                             <v-img
-                                width="300px"
+                                max-width="320px"
                                 height="300px"
                                 :src="image"
                                 alt="pokemon image"

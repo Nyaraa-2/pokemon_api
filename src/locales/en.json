@@ -2,6 +2,7 @@
     "message": "hello i18n !!",
     "buttonadd": "Add",
     "buttondelete": "Delete",
+    "search": "Search for a pokemon",
     "navbar": {
         "home": "Home",
         "bag": "Bag",

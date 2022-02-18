@@ -8,9 +8,9 @@ const apiPokemon = axios.create({
 })
 export async function gottaCatchEmAll() {
     try {
-        const { data } = await apiPokemon('?limit=50/')
+        const { data } = await apiPokemon('?limit=150/')
         //const { data } = await apiPokemon('/')
-        return data
+        return data.results
     } catch (e) {
         throw new Error('La requête a échoué')
     }

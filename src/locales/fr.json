@@ -2,6 +2,7 @@
     "message": "bonjour i18n !!",
     "buttonadd": "Ajouter",
     "buttondelete": "Supprimer",
+    "search": "Rechercher un pokémon",
     "navbar": {
         "home": "Accueil",
         "bag": "Sac",
