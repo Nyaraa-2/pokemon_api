@@ -4,6 +4,13 @@
 [PokeApi](https://pokeapi.co/)
 As part of the evaluation of the skills of the vue.js module, it is to propose a user experience from an API of our choice.
 
+![alt text](https://servicenav.coservit.com/wp-content/uploads/2021/05/203.jpg)
+```
+docker pull nyaraa/pokeapi_vue
+docker run -d -p 80:8080 nyaraa/pokeapi_vue
+app.listen(port, () => {80})
+```
+
 ## The evaluation of competences will be based on the following axes:
 
 #### Mastery of basic Vue.js concepts
