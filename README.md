@@ -7,7 +7,10 @@ As part of the evaluation of the skills of the vue.js module, it is to propose a
 ![alt text](https://servicenav.coservit.com/wp-content/uploads/2021/05/203.jpg)
 ```
 docker pull nyaraa/pokeapi_vue
-docker run -d -p 80:8080 nyaraa/pokeapi_vue
+All devices :
+➜  ~ docker run -d -p 80:8080 nyaraa/pokeapi_vue
+On Mac M1 : 
+➜  ~ docker run --platform linux/amd64 -d -p 80:8080 nyaraa/pokeapi_vue           
 app.listen(port, () => {80})
 ```
 
