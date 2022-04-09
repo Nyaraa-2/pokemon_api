@@ -1,6 +1,13 @@
 <template>
     <div>
         <v-container>
+            <div v-if="research != null && research.length === 0">
+                <v-alert color="indigo lighten-2" type="error" max-witdh="500px">
+                    {{ $t('noresults') }}
+                </v-alert>
+            </div>
+        </v-container>
+        <v-container>
             <v-row>
                 <v-col cols="12" md="4" sm="4" offset-md="8">
                     <v-text-field
@@ -40,7 +47,7 @@ export default {
         research() {
             if (this.search) {
                 return this.pokemons.filter((p) => {
-                    return p.name.startsWith(this.search)
+                    return p.name.includes(this.search)
                 })
             } else {
                 return null

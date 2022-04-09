@@ -5,10 +5,13 @@
                 ><v-icon>mdi-arrow-left</v-icon> {{ $t('navbar.goBack') }}</span
             >
         </v-btn>
+        <br><br>
+        <v-divider></v-divider>
+        <br>
         <v-container>
             <v-card max-width="90%">
                 <v-row align="center" class="mx-10">
-                    <v-card-title class="red--text">{{
+                    <v-card-title class="purple--text">{{
                         pokemon.name | toUpperCase(pokemon.name)
                     }}</v-card-title>
                     <v-spacer />

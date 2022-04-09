@@ -16,5 +16,6 @@
         "types": "Types",
         "abilities": "Capacités"
     },
-    "changeLangBtn": "Changer la langue"
+    "changeLangBtn": "Changer la langue",
+    "noresults" : "Il n'y a pas de résultats pour votre recherche"
 }
