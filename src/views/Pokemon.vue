@@ -5,9 +5,9 @@
                 ><v-icon>mdi-arrow-left</v-icon> {{ $t('navbar.goBack') }}</span
             >
         </v-btn>
-        <br><br>
+        <br /><br />
         <v-divider></v-divider>
-        <br>
+        <br />
         <v-container>
             <v-card max-width="90%">
                 <v-row align="center" class="mx-10">

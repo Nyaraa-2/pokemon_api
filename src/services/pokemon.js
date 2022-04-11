@@ -4,16 +4,16 @@ import axios from 'axios'
  * Récupère les 20 premiers pokémon de l'api
  */
 const apiPokemon = axios.create({
-    baseURL: 'https://pokeapi.co/api/v2/pokemon/',
+  baseURL: 'https://pokeapi.co/api/v2/pokemon/',
 })
 export async function gottaCatchEmAll() {
-    try {
-        const { data } = await apiPokemon('?limit=150/')
-        //const { data } = await apiPokemon('/')
-        return data.results
-    } catch (e) {
-        throw new Error('La requête a échoué')
-    }
+  try {
+    const { data } = await apiPokemon('?limit=150/')
+    //const { data } = await apiPokemon('/')
+    return data.results
+  } catch (e) {
+    throw new Error('La requête a échoué')
+  }
 }
 
 /**
@@ -22,12 +22,12 @@ export async function gottaCatchEmAll() {
  * @returns {Détails du pokémon}
  */
 export async function getPokemonByName(name) {
-    try {
-        const { data } = await apiPokemon(`/${name}`)
-        return data
-    } catch (e) {
-        throw new Error('La requête a échoué')
-    }
+  try {
+    const { data } = await apiPokemon(`/${name}`)
+    return data
+  } catch (e) {
+    throw new Error('La requête a échoué')
+  }
 }
 
 /**
@@ -36,10 +36,10 @@ export async function getPokemonByName(name) {
  * @returns {Détails du pokémon}
  */
 export async function getPokemonById(id) {
-    try {
-        const { data } = await apiPokemon(`/${id}`)
-        return data
-    } catch (e) {
-        throw new Error('La requête a échoué')
-    }
+  try {
+    const { data } = await apiPokemon(`/${id}`)
+    return data
+  } catch (e) {
+    throw new Error('La requête a échoué')
+  }
 }
