@@ -16,24 +16,10 @@ localVue.use(Vuex)
 localVue.use(VueI18n)
 
 describe('HomePage.vue', () => {
-    //let mutations
     let store
     let options
     let i18n
-
-    const fr = { fr: localesFr }
-
     beforeEach(() => {
-        // mutations = {
-        //   [ADD_POKEMON_IN_BAG]: jest.fn(),
-        // }
-        // ;(store = new Vuex.Store({
-        //   mutations,
-        // })),
-        // i18n = new VueI18n({
-        //     locale: 'fr',
-        //     messages: fr,
-        // })
         options = {
             localVue,
             store,
@@ -64,9 +50,12 @@ describe('HomePage.vue', () => {
                 //* act
                 await wrapper.vm.getAllPokemons()
                 wrapper.setData({ search: 'pokemon1' })
+
                 //*assert
                 expect(wrapper.vm.search).toBe('pokemon1')
                 expect(wrapper.vm.research[0]).toEqual(wrapper.vm.pokemons[0])
+
+                //* set data search
                 wrapper.setData({ search: 'poke' })
                 expect(wrapper.vm.research).toEqual(wrapper.vm.pokemons)
             })
