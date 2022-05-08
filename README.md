@@ -1,5 +1,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/087b243a-3b35-454a-b674-0b75f448bf4e/deploy-status)](https://app.netlify.com/sites/pokedex-vuejs-nyaraa/deploys)
+
+
 ![alt text](https://pokeapi.co/static/pokeapi_256.3fa72200.png)
 
 [PokeApi](https://pokeapi.co/)
